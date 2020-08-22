@@ -1,0 +1,63 @@
+{
+  "name": "react-rss-reader",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@bit/jorgemoreira.base.styles": "^0.0.2",
+    "@reduxjs/toolkit": "^1.1.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^26.0.10",
+    "@types/node": "^14.6.0",
+    "@types/react": "^16.9.46",
+    "@types/react-dom": "^16.9.8",
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.1.3",
+    "react-scripts": "3.4.3",
+    "tailwindcss": "^1.7.3",
+    "typescript": "^4.0.2"
+  },
+  "scripts": {
+    "build:styles": "postcss src/styles/main.css -o src/styles/main.output.css",
+    "prestart": "yarn build:styles",
+    "prebuild": "yarn build:styles",
+    "prestorybook": "yarn build:styles",
+    "prebuild-storybook": "yarn build:styles",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@storybook/addon-actions": "^6.0.16",
+    "@storybook/addon-essentials": "^6.0.16",
+    "@storybook/addon-links": "^6.0.16",
+    "@storybook/node-logger": "^6.0.16",
+    "@storybook/preset-create-react-app": "^3.1.4",
+    "@storybook/react": "^6.0.16",
+    "babel-loader": "^8.1.0",
+    "react-is": "^16.13.1"
+  }
+}
