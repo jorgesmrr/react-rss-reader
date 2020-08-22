@@ -1907,10 +1907,10 @@
   resolved "https://registry.yarnpkg.com/@base2/pretty-print-object/-/pretty-print-object-1.0.0.tgz#860ce718b0b73f4009e153541faff2cb6b85d047"
   integrity sha512-4Th98KlMHr5+JkxfcoDT//6vY8vM+iSPrLNpHhRyLx2CFYi8e2RfqPLdpbnpo0Q5lQC5hNB79yes07zb02fvCw==
 
-"@bit/jorgemoreira.base.styles@^0.0.2":
-  version "0.0.2"
-  resolved "https://node.bit.dev/jorgemoreira.base.styles/-/jorgemoreira.base.styles-0.0.2.tgz#15380eb6a144b2119073b254f3d7d51a54a8de78"
-  integrity sha1-FTgOtqFEshGQc7JU89fVGlSo3ng=
+"@bit/jorgemoreira.base.styles@^0.0.3":
+  version "0.0.3"
+  resolved "https://node.bit.dev/jorgemoreira.base.styles/-/jorgemoreira.base.styles-0.0.3.tgz#2bec1ea90f3f09773fcfcc77632d87c4b920b39d"
+  integrity sha1-K+weqQ8/CXc/z8x3Yy2HxLkgs50=
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
@@ -3273,6 +3273,11 @@
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
   integrity sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
+
+"@types/faker@^4.1.12":
+  version "4.1.12"
+  resolved "https://registry.yarnpkg.com/@types/faker/-/faker-4.1.12.tgz#065d37343677df1aa757c622650bd14666c42602"
+  integrity sha512-0MEyzJrLLs1WaOCx9ULK6FzdCSj2EuxdSP9kvuxxdBEGujZYUOZ4vkPXdgu3dhyg/pOdn7VCatelYX7k0YShlA==
 
 "@types/glob-base@^0.3.0":
   version "0.3.0"
@@ -7346,6 +7351,11 @@ extsprintf@^1.2.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
+
+faker@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/faker/-/faker-4.1.0.tgz#1e45bbbecc6774b3c195fad2835109c6d748cc3f"
+  integrity sha1-HkW7vsxndLPBlfrSg1EJxtdIzD8=
 
 fast-deep-equal@^3.1.1:
   version "3.1.1"

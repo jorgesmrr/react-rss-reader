@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@bit/jorgemoreira.base.styles": "^0.0.2",
+    "@bit/jorgemoreira.base.styles": "^0.0.3",
     "@reduxjs/toolkit": "^1.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/faker": "^4.1.12",
     "@types/jest": "^26.0.10",
     "@types/node": "^14.6.0",
     "@types/react": "^16.9.46",
@@ -58,6 +59,7 @@
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.16",
     "babel-loader": "^8.1.0",
+    "faker": "^4.1.0",
     "react-is": "^16.13.1"
   }
 }
