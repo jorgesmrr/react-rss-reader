@@ -5,13 +5,13 @@ import { Feed } from "../../../models/Feed";
 export interface FeedListProps {
   feeds: Array<Feed>;
   selectedId?: number;
-  onItemClick: (id: number) => void;
+  onFeedClick: (id: number) => void;
 }
 
 const FeedList: React.FC<FeedListProps> = ({
   feeds,
   selectedId,
-  onItemClick,
+  onFeedClick,
 }) => {
   return (
     <div>
@@ -19,7 +19,7 @@ const FeedList: React.FC<FeedListProps> = ({
         <FeedListItem
           selected={feed.id === selectedId}
           feed={feed}
-          onItemClick={onItemClick}
+          onClick={() => onFeedClick(feed.id)}
         />
       ))}
     </div>

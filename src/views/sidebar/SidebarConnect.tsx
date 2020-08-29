@@ -19,7 +19,7 @@ const SidebarConnect: React.FC = () => {
   };
 
   return (
-    <Sidebar selectedId={selectedId} feeds={feeds} onItemClick={onItemClick} />
+    <Sidebar selectedId={selectedId} feeds={feeds} onFeedClick={onItemClick} />
   );
 };
 

@@ -6,14 +6,17 @@ interface SudebarProps extends FeedListProps {}
 const Sidebar: React.FC<SudebarProps> = ({
   feeds,
   selectedId,
-  onItemClick,
+  onFeedClick: onItemClick,
 }) => {
   return (
     <div className="bg-neutral-2">
+      <span className="block uppercase text-sm text-neutral-8 font-bold my-6 px-4">
+        Subscriptions
+      </span>
       <FeedList
         selectedId={selectedId}
         feeds={feeds}
-        onItemClick={onItemClick}
+        onFeedClick={onItemClick}
       />
     </div>
   );
