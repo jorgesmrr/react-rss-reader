@@ -1,5 +1,5 @@
 import faker from "faker";
-import { Channel } from "../models/Channel";
+import { Feed } from "../models/Feed";
 import { Post } from "../models/Post";
 
 interface MockFactory<T> {
@@ -7,16 +7,16 @@ interface MockFactory<T> {
   many: (count: number) => Array<T>;
 }
 
-// Channels
+// Feeds
 
-const getChannel = () => ({
+const getFeed = () => ({
   id: faker.random.number(),
   title: faker.lorem.words(),
 });
 
-export const channelMockFactory: MockFactory<Channel> = {
-  one: getChannel,
-  many: (count) => [...new Array(count)].map(getChannel),
+export const feedMockFactory: MockFactory<Feed> = {
+  one: getFeed,
+  many: (count) => [...new Array(count)].map(getFeed),
 };
 
 // Posts

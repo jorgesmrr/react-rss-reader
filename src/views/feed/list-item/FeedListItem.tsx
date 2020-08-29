@@ -1,15 +1,12 @@
 import React from "react";
-import { Channel } from "../../../models/Channel";
+import { Feed } from "../../../models/Feed";
 
-export interface ChannelListItemProps {
-  channel: Channel;
+export interface FeedListItemProps {
+  feed: Feed;
   selected: boolean;
 }
 
-const ChannelLListItem: React.FC<ChannelListItemProps> = ({
-  channel,
-  selected,
-}) => {
+const FeedLListItem: React.FC<FeedListItemProps> = ({ feed, selected }) => {
   return (
     <div
       className={`flex items-center cursor-pointer hover:bg-neutral-7 p-2 hover:text-white ${
@@ -17,9 +14,9 @@ const ChannelLListItem: React.FC<ChannelListItemProps> = ({
       }`}
     >
       <div className="rounded bg-neutral-2 w-8 h-8 mr-4"></div>
-      <div>{channel.title}</div>
+      <div>{feed.title}</div>
     </div>
   );
 };
 
-export default ChannelLListItem;
+export default FeedLListItem;
