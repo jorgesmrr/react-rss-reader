@@ -17,6 +17,7 @@ const FeedList: React.FC<FeedListProps> = ({
     <div>
       {feeds.map((feed) => (
         <FeedListItem
+          key={feed.id}
           selected={feed.id === selectedId}
           feed={feed}
           onClick={() => onFeedClick(feed.id)}

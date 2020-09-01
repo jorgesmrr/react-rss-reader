@@ -1912,6 +1912,37 @@
   resolved "https://node.bit.dev/jorgemoreira.base.styles/-/jorgemoreira.base.styles-0.0.3.tgz#2bec1ea90f3f09773fcfcc77632d87c4b920b39d"
   integrity sha1-K+weqQ8/CXc/z8x3Yy2HxLkgs50=
 
+"@bit/jorgemoreira.react.input.field-wrapper@0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/jorgemoreira.react.input.field-wrapper/-/jorgemoreira.react.input.field-wrapper-0.0.1.tgz#7ca410d624e55ff069031de1d244bd20466d5c55"
+  integrity sha1-fKQQ1iTlX/BpAx3h0kS9IEZtXFU=
+  dependencies:
+    "@types/react" "^16.9.0"
+
+"@bit/jorgemoreira.react.input.field@0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/jorgemoreira.react.input.field/-/jorgemoreira.react.input.field-0.0.1.tgz#ff2dc860d87babcfa3b02ff479ac193212aea70e"
+  integrity sha1-/y3IYNh7q8+jsC/0eawZMhKupw4=
+  dependencies:
+    "@types/react" "^16.9.0"
+
+"@bit/jorgemoreira.react.input.text-field@^0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/jorgemoreira.react.input.text-field/-/jorgemoreira.react.input.text-field-0.0.1.tgz#795985dddb27b07e92d1fb525fd3fe581fb3fd95"
+  integrity sha1-eVmF3dsnsH6S0ftSX9P+WB+z/ZU=
+  dependencies:
+    "@bit/jorgemoreira.react.input.field" "0.0.1"
+    "@bit/jorgemoreira.react.input.field-wrapper" "0.0.1"
+    "@types/react" "^16.9.0"
+
+"@bit/jorgemoreira.react.surface.modal@^0.0.2":
+  version "0.0.2"
+  resolved "https://node.bit.dev/jorgemoreira.react.surface.modal/-/jorgemoreira.react.surface.modal-0.0.2.tgz#2eb52d181ed4cc199fc6549cbd87e2a072173ee8"
+  integrity sha1-LrUtGB7UzBmfxlScvYfioHIXPug=
+  dependencies:
+    "@types/react" "^16.9.0"
+    "@types/react-dom" "^16.9.0"
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -3478,7 +3509,7 @@
     "@types/react" "*"
     "@types/reactcss" "*"
 
-"@types/react-dom@*", "@types/react-dom@^16.9.8":
+"@types/react-dom@*", "@types/react-dom@^16.9.0", "@types/react-dom@^16.9.8":
   version "16.9.8"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.8.tgz#fe4c1e11dfc67155733dfa6aa65108b4971cb423"
   integrity sha512-ykkPQ+5nFknnlU6lDd947WbQ6TE3NNzbQAkInC2EKY1qeYdTKp7onFusmYZb+ityzx2YviqT6BXSu+LyWWJwcA==
@@ -3506,6 +3537,14 @@
   version "16.9.46"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.46.tgz#f0326cd7adceda74148baa9bff6e918632f5069e"
   integrity sha512-dbHzO3aAq1lB3jRQuNpuZ/mnu+CdD3H0WVaaBQA8LTT3S33xhVBUj232T8M3tAhSWJs/D/UqORYUlJNl/8VQZg==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^3.0.2"
+
+"@types/react@^16.9.0":
+  version "16.9.48"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.48.tgz#d3387329f070d1b1bc0ff4a54a54ceefd5a8485c"
+  integrity sha512-4ykBVswgYitPGMXFRxJCHkxJDU2rjfU3/zw67f8+dB7sNdVJXsrwqoYxz/stkAucymnEEbRPFmX7Ce5Mc/kJCw==
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"

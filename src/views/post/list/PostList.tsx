@@ -12,7 +12,11 @@ const PostList: React.FC<PostListProps> = ({ posts, onPostClick }) => {
     <div>
       {posts.map((post, index) => (
         <div className={index > 0 ? "mt-4" : ""}>
-          <PostCard post={post} onClick={() => onPostClick(post.id)} />
+          <PostCard
+            key={post.id}
+            post={post}
+            onClick={() => onPostClick(post.id)}
+          />
         </div>
       ))}
     </div>
