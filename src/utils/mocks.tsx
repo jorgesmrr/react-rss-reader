@@ -12,6 +12,7 @@ interface MockFactory<T> {
 const getFeed = () => ({
   id: faker.random.number(),
   title: faker.lorem.words(),
+  url: "",
   posts: postMockFactory.many(10),
 });
 

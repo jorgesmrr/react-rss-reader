@@ -6,6 +6,10 @@ interface SelectedFeed {
   id: number;
 }
 
+interface AddFeed {
+  url: string;
+}
+
 interface FeedsState {
   feeds: Array<Feed>;
   selectedId?: number;
@@ -24,11 +28,17 @@ const feedsSlice = createSlice({
       state.selectedId = action.payload.id;
     },
     refreshFeeds(state) {
-      state.feeds = feedMockFactory.many(10);
+      state.feeds = [];
+    },
+    addFeed(state, action: PayloadAction<AddFeed>) {
+      state.feeds.unshift({
+        ...feedMockFactory.one(),
+        url: action.payload.url,
+      });
     },
   },
 });
 
-export const { setSelected, refreshFeeds } = feedsSlice.actions;
+export const { setSelected, refreshFeeds, addFeed } = feedsSlice.actions;
 
 export default feedsSlice.reducer;
