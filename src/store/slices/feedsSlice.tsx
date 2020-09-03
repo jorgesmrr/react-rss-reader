@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Feed } from "../../models/Feed";
-import { feedMockFactory } from "../../utils/mocks";
+import { fetchFeed } from "../../api/feedAPI";
+import { AppThunk } from "../store";
 
 interface SelectedFeed {
   id: number;
@@ -30,15 +31,25 @@ const feedsSlice = createSlice({
     refreshFeeds(state) {
       state.feeds = [];
     },
-    addFeed(state, action: PayloadAction<AddFeed>) {
-      state.feeds.unshift({
-        ...feedMockFactory.one(),
-        url: action.payload.url,
-      });
+    addFeedSuccess(state, action: PayloadAction<Feed>) {
+      state.feeds.unshift(action.payload);
+    },
+    addFeedFailure() {
+      // todo
     },
   },
 });
 
-export const { setSelected, refreshFeeds, addFeed } = feedsSlice.actions;
+export const { setSelected, refreshFeeds } = feedsSlice.actions;
+const { addFeedSuccess, addFeedFailure } = feedsSlice.actions;
 
 export default feedsSlice.reducer;
+
+export const addFeed = (url: string): AppThunk => async (dispatch) => {
+  try {
+    const feed = await fetchFeed(url);
+    dispatch(addFeedSuccess(feed));
+  } catch (err) {
+    dispatch(addFeedFailure());
+  }
+};

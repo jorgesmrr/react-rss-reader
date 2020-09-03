@@ -12,7 +12,7 @@ const FeedSubscriber: React.FC<FeedSubscriberProps> = ({ onDone }) => {
   const dispatch = useDispatch();
 
   const submit = () => {
-    dispatch(addFeed({ url: "" }));
+    dispatch(addFeed("https://hipsters.tech/feed/podcast/"));
     onDone();
   };
 
