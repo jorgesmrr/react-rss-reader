@@ -29,6 +29,8 @@ const getPost = () => ({
   author: faker.name.findName(),
   published_at: faker.date.past(),
   content: faker.lorem.paragraph(),
+  description: faker.lorem.paragraph(),
+  link: "",
 });
 
 export const postMockFactory: MockFactory<Post> = {

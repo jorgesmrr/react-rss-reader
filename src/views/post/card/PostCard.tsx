@@ -13,13 +13,15 @@ const PostCard: React.FC<PostCardProps> = ({ post, onClick }) => {
         <div className="flex-none bg-neutral-2 rounded mr-4 w-32 h-32"></div>
         <div className="flex-grow">
           <h2 className="mt-0">{post.title}</h2>
-          <div className="text-neutral-7">{post.content}</div>
+          <div className="text-neutral-7">{post.description}</div>
           <div className="flex items-center mt-4">
             <div className="text-neutral-8 font-bold">{post.author}</div>
             <div className="ml-auto" />
-            <div className="text-neutral-6">
-              {post.published_at.toLocaleDateString()}
-            </div>
+            {post.published_at && (
+              <div className="text-neutral-6">
+                {post.published_at.toLocaleDateString()}
+              </div>
+            )}
           </div>
         </div>
       </div>
