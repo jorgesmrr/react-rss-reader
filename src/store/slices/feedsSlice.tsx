@@ -18,16 +18,12 @@ interface FeedsState {
 
 let initialState: FeedsState = {
   feeds: [],
-  selectedId: undefined,
 };
 
 const feedsSlice = createSlice({
   name: "feeds",
   initialState,
   reducers: {
-    setSelected(state, action: PayloadAction<SelectedFeed>) {
-      state.selectedId = action.payload.id;
-    },
     refreshFeeds(state) {
       state.feeds = [];
     },
@@ -40,7 +36,7 @@ const feedsSlice = createSlice({
   },
 });
 
-export const { setSelected, refreshFeeds } = feedsSlice.actions;
+export const { refreshFeeds } = feedsSlice.actions;
 const { addFeedSuccess, addFeedFailure } = feedsSlice.actions;
 
 export default feedsSlice.reducer;
