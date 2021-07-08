@@ -1,7 +1,6 @@
 {
   "name": "react-rss-reader",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@bit/jorgemoreira.base.styles": "^0.0.3",
     "@bit/jorgemoreira.react.input.text-field": "0.0.2",
@@ -74,5 +73,8 @@
     "faker": "^4.1.0",
     "react-is": "^16.13.1"
   },
-  "proxy": "http://localhost:8080"
+  "proxy": "http://localhost:8080",
+  "prettier": {
+    "tabWidth": 2
+  }
 }

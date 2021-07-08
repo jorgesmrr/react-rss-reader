@@ -12,9 +12,7 @@ export async function fetchFeed(url: string): Promise<any> {
     try {
       const result = await xml2js.parseStringPromise(xml);
 
-      console.log(result);
-
-      const channel = result.rss.channel[0];
+      const channel = (result.rss || result.feed).channel[0];
       const feed: Feed = {
         id: faker.random.number(),
         title: channel.title[0],

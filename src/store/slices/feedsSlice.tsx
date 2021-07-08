@@ -44,7 +44,10 @@ export default feedsSlice.reducer;
 export const addFeed = (url: string): AppThunk => async (dispatch) => {
   try {
     const feed = await fetchFeed(url);
-    dispatch(addFeedSuccess(feed));
+
+    if (feed) {
+      dispatch(addFeedSuccess(feed));
+    } else throw "Not found";
   } catch (err) {
     dispatch(addFeedFailure());
   }

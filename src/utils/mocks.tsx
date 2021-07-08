@@ -9,7 +9,7 @@ interface MockFactory<T> {
 
 // Feeds
 
-const getFeed = () => ({
+const getFeed: () => Feed = () => ({
   id: faker.random.number(),
   title: faker.lorem.words(),
   url: "",
@@ -23,7 +23,7 @@ export const feedMockFactory: MockFactory<Feed> = {
 
 // Posts
 
-const getPost = () => ({
+const getPost: () => Post = () => ({
   id: faker.random.number(),
   title: faker.lorem.words(),
   author: faker.name.findName(),
